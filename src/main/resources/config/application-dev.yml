@@ -31,8 +31,6 @@ spring:
         active: dev
         include:
             - swagger
-            # Uncomment to activate TLS for the dev profile
-            #- tls
     devtools:
         restart:
             enabled: true
@@ -90,7 +88,7 @@ server:
 
 jhipster:
     http:
-        version: V_1_1 # To use HTTP/2 you will need to activate TLS (see application-tls.yml)
+        version: V_1_1
     cache: # Cache configuration
         hazelcast: # Hazelcast distributed cache
             time-to-live-seconds: 3600
