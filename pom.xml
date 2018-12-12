@@ -13,8 +13,6 @@
     <repositories>
     </repositories>
 
-    <!-- jhipster-needle-distribution-management -->
-
     <properties>
         <!-- Build properties -->
         <maven.version>3.0.0</maven.version>
@@ -607,12 +605,12 @@
                     <configuration>
                         <rules>
                             <requireMavenVersion>
-                                <message>You are running an older version of Maven. JHipster requires at least Maven ${maven.version}</message>
+                                <message>You are running an older version of Maven. The app requires at least Maven ${maven.version}</message>
                                 <version>[${maven.version},)</version>
                             </requireMavenVersion>
                             <requireJavaVersion>
-                                <!-- Until JHipster supports JDK 9 -->
-                                <message>You are running an incompatible version of Java. JHipster requires JDK ${java.version}</message>
+                                <!-- Until application supports JDK 9 -->
+                                <message>You are running an incompatible version of Java. The app requires JDK ${java.version}</message>
                                 <version>[1.8,1.9)</version>
                             </requireJavaVersion>
                         </rules>
