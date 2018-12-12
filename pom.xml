@@ -91,7 +91,6 @@
         <sonar.surefire.reportsPath>${project.testresult.directory}/surefire-reports</sonar.surefire.reportsPath>
         <sonar.tests>${project.basedir}/src/test/</sonar.tests>
 
-        <!-- jhipster-needle-maven-property -->
     </properties>
 
     <dependencyManagement>
@@ -103,7 +102,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- jhipster-needle-maven-add-dependency-management -->
         </dependencies>
     </dependencyManagement>
 
@@ -373,7 +371,6 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-data</artifactId>
         </dependency>
-        <!-- jhipster-needle-maven-add-dependency -->
     </dependencies>
 
     <build>
@@ -451,7 +448,6 @@
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
             </plugin>
-            <!-- jhipster-needle-maven-add-plugin -->
         </plugins>
         <pluginManagement>
             <plugins>
@@ -970,6 +966,5 @@
                 </dependency>
             </dependencies>
         </profile>
-        <!-- jhipster-needle-maven-add-profile -->
     </profiles>
 </project>
