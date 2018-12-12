@@ -80,8 +80,8 @@ public class CacheConfiguration {
             log.debug("Configuring Hazelcast clustering for instanceId: {}", serviceId);
             // In development, everything goes through 127.0.0.1, with a different port
             if (env.acceptsProfiles(JHipsterConstants.SPRING_PROFILE_DEVELOPMENT)) {
-                log.debug("Application is running with the \"dev\" profile, Hazelcast " +
-                          "cluster will only work with localhost instances");
+                log.debug("Application is running with the \"dev\" profile, Hazelcast "
+                        + "cluster will only work with localhost instances");
 
                 System.setProperty("hazelcast.local.localAddress", "127.0.0.1");
                 config.getNetworkConfig().setPort(serverProperties.getPort() + 5701);
@@ -124,7 +124,7 @@ public class CacheConfiguration {
         Number of backups. If 1 is set as the backup-count for example,
         then all entries of the map will be copied to another JVM for
         fail-safety. Valid numbers are 0 (no backup), 1, 2, 3.
-        */
+         */
         mapConfig.setBackupCount(jHipsterProperties.getCache().getHazelcast().getBackupCount());
 
         /*
@@ -133,7 +133,7 @@ public class CacheConfiguration {
         LRU (Least Recently Used),
         LFU (Least Frequently Used).
         NONE is the default.
-        */
+         */
         mapConfig.setEvictionPolicy(EvictionPolicy.LRU);
 
         /*
@@ -141,7 +141,7 @@ public class CacheConfiguration {
         map is evicted based on the policy defined.
         Any integer between 0 and Integer.MAX_VALUE. 0 means
         Integer.MAX_VALUE. Default is 0.
-        */
+         */
         mapConfig.setMaxSizeConfig(new MaxSizeConfig(0, MaxSizeConfig.MaxSizePolicy.USED_HEAP_SIZE));
 
         return mapConfig;

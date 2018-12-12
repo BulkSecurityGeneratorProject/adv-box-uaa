@@ -8,9 +8,10 @@ import org.springframework.core.env.Environment;
 import java.util.*;
 
 /**
- * Utility class to load a Spring profile to be used as default
- * when there is no <code>spring.profiles.active</code> set in the environment or as command line argument.
- * If the value is not available in <code>application.yml</code> then <code>dev</code> profile will be used as default.
+ * Utility class to load a Spring profile to be used as default when there is no
+ * <code>spring.profiles.active</code> set in the environment or as command line
+ * argument. If the value is not available in <code>application.yml</code> then
+ * <code>dev</code> profile will be used as default.
  */
 public final class DefaultProfileUtil {
 
@@ -30,7 +31,7 @@ public final class DefaultProfileUtil {
         * The default profile to use when no other profiles are defined
         * This cannot be set in the <code>application.yml</code> file.
         * See https://github.com/spring-projects/spring-boot/issues/1219
-        */
+         */
         defProperties.put(SPRING_PROFILE_DEFAULT, JHipsterConstants.SPRING_PROFILE_DEVELOPMENT);
         app.setDefaultProperties(defProperties);
     }

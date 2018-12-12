@@ -23,7 +23,8 @@ import java.util.stream.Collectors;
 import static org.mockito.BDDMockito.given;
 
 /**
- * A bean providing simple mocking of OAuth2 access tokens for security integration tests.
+ * A bean providing simple mocking of OAuth2 access tokens for security
+ * integration tests.
  */
 @Component
 public class OAuth2TokenMockUtil {
@@ -33,16 +34,16 @@ public class OAuth2TokenMockUtil {
 
     private OAuth2Authentication createAuthentication(String username, Set<String> scopes, Set<String> roles) {
         List<GrantedAuthority> authorities = roles.stream()
-            .map(SimpleGrantedAuthority::new)
-            .collect(Collectors.toList());
+                .map(SimpleGrantedAuthority::new)
+                .collect(Collectors.toList());
 
         User principal = new User(username, "test", true, true, true, true, authorities);
         Authentication authentication = new UsernamePasswordAuthenticationToken(principal, principal.getPassword(),
-            principal.getAuthorities());
+                principal.getAuthorities());
 
         // Create the authorization request and OAuth2Authentication object
         OAuth2Request authRequest = new OAuth2Request(null, "testClient", null, true, scopes, null, null, null,
-            null);
+                null);
         return new OAuth2Authentication(authRequest, authentication);
     }
 
@@ -50,7 +51,7 @@ public class OAuth2TokenMockUtil {
         String uuid = String.valueOf(UUID.randomUUID());
 
         given(tokenServices.loadAuthentication(uuid))
-            .willReturn(createAuthentication(username, scopes, roles));
+                .willReturn(createAuthentication(username, scopes, roles));
 
         given(tokenServices.readAccessToken(uuid)).willReturn(new DefaultOAuth2AccessToken(uuid));
 
