@@ -1,13 +1,13 @@
 package com.devcircus.adventurebox.uaa.web.rest;
 
 import com.devcircus.adventurebox.uaa.UaaApp;
-import com.devcircus.adventurebox.uaa.domain.Authority;
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.repository.UserRepository;
-import com.devcircus.adventurebox.uaa.security.AuthoritiesConstants;
+import com.devcircus.adventurebox.uaa.model.domain.Authority;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.model.repository.UserRepository;
+import com.devcircus.adventurebox.uaa.util.security.AuthoritiesConstants;
 import com.devcircus.adventurebox.uaa.service.MailService;
 import com.devcircus.adventurebox.uaa.service.UserService;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import com.devcircus.adventurebox.uaa.service.mapper.UserMapper;
 import com.devcircus.adventurebox.uaa.web.rest.errors.ExceptionTranslator;
 import com.devcircus.adventurebox.uaa.web.rest.vm.ManagedUserVM;

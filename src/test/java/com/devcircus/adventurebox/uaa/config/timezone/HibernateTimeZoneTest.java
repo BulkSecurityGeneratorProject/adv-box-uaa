@@ -1,8 +1,8 @@
 package com.devcircus.adventurebox.uaa.config.timezone;
 
 import com.devcircus.adventurebox.uaa.UaaApp;
-import com.devcircus.adventurebox.uaa.repository.timezone.DateTimeWrapper;
-import com.devcircus.adventurebox.uaa.repository.timezone.DateTimeWrapperRepository;
+import com.devcircus.adventurebox.uaa.model.repository.timezone.DateTimeWrapper;
+import com.devcircus.adventurebox.uaa.model.repository.timezone.DateTimeWrapperRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

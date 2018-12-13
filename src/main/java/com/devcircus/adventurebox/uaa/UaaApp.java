@@ -20,9 +20,11 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
+@EnableJpaRepositories("com.devcircus.adventurebox.uaa.model.repository")
 @EnableDiscoveryClient
 public class UaaApp {
 

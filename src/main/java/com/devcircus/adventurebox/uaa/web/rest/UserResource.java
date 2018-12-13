@@ -1,17 +1,17 @@
 package com.devcircus.adventurebox.uaa.web.rest;
 
 import com.devcircus.adventurebox.uaa.config.Constants;
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.repository.UserRepository;
-import com.devcircus.adventurebox.uaa.security.AuthoritiesConstants;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.model.repository.UserRepository;
+import com.devcircus.adventurebox.uaa.util.security.AuthoritiesConstants;
 import com.devcircus.adventurebox.uaa.service.MailService;
 import com.devcircus.adventurebox.uaa.service.UserService;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import com.devcircus.adventurebox.uaa.web.rest.errors.BadRequestAlertException;
 import com.devcircus.adventurebox.uaa.web.rest.errors.EmailAlreadyUsedException;
 import com.devcircus.adventurebox.uaa.web.rest.errors.LoginAlreadyUsedException;
-import com.devcircus.adventurebox.uaa.web.rest.util.HeaderUtil;
-import com.devcircus.adventurebox.uaa.web.rest.util.PaginationUtil;
+import com.devcircus.adventurebox.uaa.util.rest.HeaderUtil;
+import com.devcircus.adventurebox.uaa.util.rest.PaginationUtil;
 import com.codahale.metrics.annotation.Timed;
 import io.github.jhipster.web.util.ResponseUtil;
 

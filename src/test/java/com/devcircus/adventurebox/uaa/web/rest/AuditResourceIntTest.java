@@ -2,8 +2,8 @@ package com.devcircus.adventurebox.uaa.web.rest;
 
 import com.devcircus.adventurebox.uaa.UaaApp;
 import com.devcircus.adventurebox.uaa.config.audit.AuditEventConverter;
-import com.devcircus.adventurebox.uaa.domain.PersistentAuditEvent;
-import com.devcircus.adventurebox.uaa.repository.PersistenceAuditEventRepository;
+import com.devcircus.adventurebox.uaa.model.domain.PersistentAuditEvent;
+import com.devcircus.adventurebox.uaa.model.repository.PersistenceAuditEventRepository;
 import com.devcircus.adventurebox.uaa.service.AuditEventService;
 import org.junit.Before;
 import org.junit.Test;

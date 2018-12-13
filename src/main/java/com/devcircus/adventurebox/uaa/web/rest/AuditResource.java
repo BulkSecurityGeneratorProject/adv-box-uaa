@@ -1,7 +1,7 @@
 package com.devcircus.adventurebox.uaa.web.rest;
 
 import com.devcircus.adventurebox.uaa.service.AuditEventService;
-import com.devcircus.adventurebox.uaa.web.rest.util.PaginationUtil;
+import com.devcircus.adventurebox.uaa.util.rest.PaginationUtil;
 
 import io.github.jhipster.web.util.ResponseUtil;
 import org.springframework.boot.actuate.audit.AuditEvent;

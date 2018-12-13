@@ -1,7 +1,7 @@
 package com.devcircus.adventurebox.uaa.service;
 
 import com.devcircus.adventurebox.uaa.config.audit.AuditEventConverter;
-import com.devcircus.adventurebox.uaa.repository.PersistenceAuditEventRepository;
+import com.devcircus.adventurebox.uaa.model.repository.PersistenceAuditEventRepository;
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

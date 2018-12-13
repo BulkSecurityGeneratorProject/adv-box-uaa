@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.config.audit;
 
-import com.devcircus.adventurebox.uaa.domain.PersistentAuditEvent;
+import com.devcircus.adventurebox.uaa.model.domain.PersistentAuditEvent;
 
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;

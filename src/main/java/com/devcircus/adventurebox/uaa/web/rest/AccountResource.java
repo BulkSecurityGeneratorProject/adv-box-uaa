@@ -2,13 +2,13 @@ package com.devcircus.adventurebox.uaa.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.repository.UserRepository;
-import com.devcircus.adventurebox.uaa.security.SecurityUtils;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.model.repository.UserRepository;
+import com.devcircus.adventurebox.uaa.util.security.SecurityUtils;
 import com.devcircus.adventurebox.uaa.service.MailService;
 import com.devcircus.adventurebox.uaa.service.UserService;
-import com.devcircus.adventurebox.uaa.service.dto.PasswordChangeDTO;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.web.rest.dto.PasswordChangeDTO;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import com.devcircus.adventurebox.uaa.web.rest.errors.*;
 import com.devcircus.adventurebox.uaa.web.rest.vm.KeyAndPasswordVM;
 import com.devcircus.adventurebox.uaa.web.rest.vm.ManagedUserVM;

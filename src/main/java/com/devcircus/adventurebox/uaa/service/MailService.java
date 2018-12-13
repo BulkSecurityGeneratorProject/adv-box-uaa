@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.service;
 
-import com.devcircus.adventurebox.uaa.domain.User;
+import com.devcircus.adventurebox.uaa.model.domain.User;
 
 import io.github.jhipster.config.JHipsterProperties;
 

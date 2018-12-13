@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.web.rest.errors;
 
-import com.devcircus.adventurebox.uaa.web.rest.util.HeaderUtil;
+import com.devcircus.adventurebox.uaa.util.rest.HeaderUtil;
 
 import org.springframework.dao.ConcurrencyFailureException;
 import org.springframework.http.ResponseEntity;

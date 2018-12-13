@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.web.rest.vm;
 
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import javax.validation.constraints.Size;
 
 /**

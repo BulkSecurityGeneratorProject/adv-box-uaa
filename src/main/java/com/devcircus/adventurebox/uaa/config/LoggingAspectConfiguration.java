@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.config;
 
-import com.devcircus.adventurebox.uaa.aop.logging.LoggingAspect;
+import com.devcircus.adventurebox.uaa.util.aop.logging.LoggingAspect;
 
 import io.github.jhipster.config.JHipsterConstants;
 

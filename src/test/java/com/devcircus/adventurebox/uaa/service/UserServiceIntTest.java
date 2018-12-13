@@ -2,9 +2,9 @@ package com.devcircus.adventurebox.uaa.service;
 
 import com.devcircus.adventurebox.uaa.UaaApp;
 import com.devcircus.adventurebox.uaa.config.Constants;
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.repository.UserRepository;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.model.repository.UserRepository;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import com.devcircus.adventurebox.uaa.service.util.RandomUtil;
 
 import org.apache.commons.lang3.RandomStringUtils;

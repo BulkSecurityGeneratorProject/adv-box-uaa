@@ -1,13 +1,13 @@
 package com.devcircus.adventurebox.uaa.service;
 
 import com.devcircus.adventurebox.uaa.config.Constants;
-import com.devcircus.adventurebox.uaa.domain.Authority;
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.repository.AuthorityRepository;
-import com.devcircus.adventurebox.uaa.repository.UserRepository;
-import com.devcircus.adventurebox.uaa.security.AuthoritiesConstants;
-import com.devcircus.adventurebox.uaa.security.SecurityUtils;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.model.domain.Authority;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.model.repository.AuthorityRepository;
+import com.devcircus.adventurebox.uaa.model.repository.UserRepository;
+import com.devcircus.adventurebox.uaa.util.security.AuthoritiesConstants;
+import com.devcircus.adventurebox.uaa.util.security.SecurityUtils;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 import com.devcircus.adventurebox.uaa.service.util.RandomUtil;
 import com.devcircus.adventurebox.uaa.web.rest.errors.*;
 

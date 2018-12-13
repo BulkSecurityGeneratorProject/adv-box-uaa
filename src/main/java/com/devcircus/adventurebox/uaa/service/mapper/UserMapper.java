@@ -1,8 +1,8 @@
 package com.devcircus.adventurebox.uaa.service.mapper;
 
-import com.devcircus.adventurebox.uaa.domain.Authority;
-import com.devcircus.adventurebox.uaa.domain.User;
-import com.devcircus.adventurebox.uaa.service.dto.UserDTO;
+import com.devcircus.adventurebox.uaa.model.domain.Authority;
+import com.devcircus.adventurebox.uaa.model.domain.User;
+import com.devcircus.adventurebox.uaa.web.rest.dto.UserDTO;
 
 import org.springframework.stereotype.Service;
 

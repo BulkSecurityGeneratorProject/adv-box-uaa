@@ -1,6 +1,6 @@
 package com.devcircus.adventurebox.uaa.config;
 
-import com.devcircus.adventurebox.uaa.security.AuthoritiesConstants;
+import com.devcircus.adventurebox.uaa.util.security.AuthoritiesConstants;
 import io.github.jhipster.config.JHipsterProperties;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
